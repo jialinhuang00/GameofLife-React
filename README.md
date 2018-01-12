@@ -52,4 +52,4 @@ for (let i = 0; i < this.rows; i++) {
 * [other's demo](http://mingplusplus.com/game-of-life/)
 * [Turtorial](https://www.youtube.com/watch?v=PM0_Er3SvFQ)
 
-* [Png](..\public\a_bunch_of_rocks.png)
+![Png](https://github.com/Jiaaa1014/GameofLife-React/blob/master/public/a_bunch_of_rocks.png)
