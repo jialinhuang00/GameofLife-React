@@ -4,7 +4,7 @@
 
 * [eventKey key difference?](https://github.com/react-bootstrap/react-bootstrap/issues/432)
 
-* 使用`eventKey時，`eventKey={num}`，而不是`eventKey="num"`
+* 使用`eventKey`時，`eventKey={num}`，而不是`eventKey="num"`
 
 
 ### 生命遊戲 Game of Life邏輯
