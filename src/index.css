@@ -1,0 +1,59 @@
+body {
+  background: #554236;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+#head,
+#gen {
+  font-size: 5rem;
+  text-align: center;
+  font-family: trebuchet ms;
+  color: #eee;
+  margin-top: 2%;
+}
+#gen {
+  font-size: 1.5em;
+}
+.box {
+  display: inline-block;
+  border: 0.1px #f8c3cd solid;
+  width: 15px;
+  height: 15px;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+
+.box:hover {
+  background: #ccc;
+  /* box-shadow: 0 0 10px 10px thistle inset; */
+  /* border: #888; */
+  /* transform: translateY(-0.25em) translateX(-0.1em); */
+}
+
+.off {
+  background: rgba(227, 145, 110, 0.3);
+}
+
+.on {
+  background: rgba(227, 145, 110, 1);
+}
+
+.center {
+  margin: auto;
+  display: table;
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-bottom: 5%;
+}
+.grid {
+  width: 150px;
+  line-height: 0;
+  margin: auto;
+  box-shadow: 5px 4px 20px 5px #fff;
+  margin-top: 20px;
+}
