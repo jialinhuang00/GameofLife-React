@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "react-bootstrap";
 
 import Grid from "./Grid";
 import Buttons from "./Buttons";
@@ -54,8 +53,8 @@ export default class Main extends Component {
   seed = () => {
     this.clear();
     let gridFull = arrayClone(this.state.gridFull);
-    for (var i = 0; i < this.rows; i++) {
-      for (var j = 0; j < this.cols; j++) {
+    for (var i = 0; i < this.rows; i += 1) {
+      for (var j = 0; j < this.cols; j += 1) {
         if (Math.floor(Math.random() * 4) === 1) {
           gridFull[i][j] = true;
         }
@@ -88,8 +87,8 @@ export default class Main extends Component {
     // 1  2  3
     // 4  *  6
     // 7  8  9
-    for (let i = 0; i < this.rows; i++) {
-      for (let j = 0; j < this.cols; j++) {
+    for (let i = 0; i < this.rows; i +=1) {
+      for (let j = 0; j < this.cols; j += 1) {
         let count = 0;
         // logic sequence: 2, 1, 3
         if (i > 0) if (g[i - 1][j]) count++;
