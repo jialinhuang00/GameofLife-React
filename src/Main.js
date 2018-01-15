@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-
 import "react-bootstrap";
+
 import Grid from "./Grid";
 import Buttons from "./Buttons";
+
 export default class Main extends Component {
   constructor() {
     super();
@@ -18,7 +19,7 @@ export default class Main extends Component {
     };
   }
 
-  //   choose the box and change it boolean and css's color
+  //   choose the box and change its boolean and css's color
   selectBox = (row, col) => {
     let gridFull = arrayClone(this.state.gridFull);
     gridFull[row][col] = !gridFull[row][col];
@@ -66,7 +67,6 @@ export default class Main extends Component {
   gridSize = size => {
     switch (size) {
       case 1:
-        console.log("hry");
         this.cols = 20;
         this.rows = 10;
         break;
