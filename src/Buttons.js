@@ -1,16 +1,27 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 import {
   Button,
   ButtonToolbar,
   DropdownButton,
   MenuItem,
   ButtonGroup
-} from "react-bootstrap";
+} from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default class Buttons extends Component {
-  handleSelect = e => {
-    this.props.gridSize(e);
-  };
+  static propTypes = {
+    fast: PropTypes.function.isRequired,
+    slow: PropTypes.function.isRequired,
+    playButton: PropTypes.function.isRequired,
+    pauseButton: PropTypes.function.isRequired,
+    clear: PropTypes.function.isRequired,
+    seed: PropTypes.function.isRequired,
+    gridSize: PropTypes.function.isRequired
+  }
+
+  handleSelect = (e) => {
+    this.props.gridSize(e)
+  }
 
   render() {
     return (
@@ -41,6 +52,6 @@ export default class Buttons extends Component {
           </DropdownButton>
         </ButtonToolbar>
       </div>
-    );
+    )
   }
 }
