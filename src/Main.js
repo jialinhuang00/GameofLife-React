@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 import 'react-bootstrap'
 import Grid from './Grid'
 import Buttons from './Buttons'
@@ -128,9 +127,9 @@ export default class Main extends Component {
   render() {
     return (
       <div id="App">
-        <div id="header">
-          <div id="head">Game of Life </div>
-          <div id="gen">Generations: {this.state.generation}</div>
+        <div>
+          <div id="title">Game of Life </div>
+          <div id="generations">Generations: {this.state.generation}</div>
         </div>
         {/* this is a file not a react-bootstrap's component */}
         <Buttons
@@ -142,12 +141,14 @@ export default class Main extends Component {
           seed={this.seed}
           gridSize={this.gridSize}
         />
-        <Grid
-          gridFull={this.state.gridFull}
-          cols={this.cols}
-          rows={this.rows}
-          selectBox={this.selectBox}
-        />
+        <table>
+          <Grid
+            gridFull={this.state.gridFull}
+            cols={this.cols}
+            rows={this.rows}
+            selectBox={this.selectBox}
+          />
+        </table>
       </div>
     )
   }

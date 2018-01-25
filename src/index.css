@@ -1,59 +1,78 @@
 body {
-  background: #554236;
-}
-#app {
-  display: flex;
-  flex-direction: column;
+    background: #999;
 }
 
-#head,
-#gen {
-  font-size: 5rem;
-  text-align: center;
-  font-family: trebuchet ms;
-  color: #eee;
-  margin-top: 2%;
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center
 }
-#gen {
-  font-size: 1.5em;
+
+
+/* Main.js */
+
+#title,
+#generations {
+    font-size: 5rem;
+    text-align: center;
+    font-family: trebuchet ms;
+    color: #333;
+    margin-top: 3%;
 }
+
+#generations {
+    font-size: 1.5em;
+}
+
+
+/* Main.js */
+
+
+/* Grid.js & Box.js*/
+
+table {
+    display: flex;
+    margin: 5% auto
+}
+
+.grid {
+    /* width: 150px; */
+    line-height: 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
 .box {
-  display: inline-block;
-  border: 0.1px #f8c3cd solid;
-  width: 15px;
-  height: 15px;
-  margin-left: -1px;
-  margin-bottom: -1px;
+    display: inline-block;
+    border: 0.5px #fff solid;
+    width: 15px;
+    height: 15px;
+    margin-left: -1px;
+    margin-bottom: -1px;
 }
 
 .box:hover {
-  background: #ccc;
-  /* box-shadow: 0 0 10px 10px thistle inset; */
-  /* border: #888; */
-  /* transform: translateY(-0.25em) translateX(-0.1em); */
+    background: rgb(214, 126, 192);
+    border: #888;
+    transform: translateY(-0.15em) translateX(-0.05em);
 }
 
 .off {
-  background: rgba(227, 145, 110, 0.3);
+    background: #999;
 }
 
 .on {
-  background: rgba(227, 145, 110, 1);
+    background: rgb(142, 50, 11);
 }
 
+
+/* Grid.js & Box.js*/
+
 .center {
-  margin: auto;
-  display: table;
-  margin-top: 10px;
+    margin: auto;
+    display: table;
 }
 
 .buttons {
-  margin-bottom: 5%;
-}
-.grid {
-  width: 150px;
-  line-height: 0;
-  margin: auto;
-  box-shadow: 5px 4px 20px 5px #fff;
-  margin-top: 20px;
+    margin-bottom: 5%;
 }

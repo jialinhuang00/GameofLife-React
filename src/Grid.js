@@ -31,9 +31,9 @@ export default class Grid extends PureComponent {
       }
     }
     return (
-      <div className="grid" style={{ width }}>
+      <tr className="grid" style={{ width }}>
         {rowsArr}
-      </div>
+      </tr>
     )
   }
 }

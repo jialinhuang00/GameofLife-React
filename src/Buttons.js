@@ -26,20 +26,20 @@ export default class Buttons extends Component {
     return (
       <div className="center buttons">
         <ButtonToolbar>
-          <ButtonGroup bsSize="small">
+          <ButtonGroup bsSize="xsmall">
             <Button onClick={this.props.playButton}>Play</Button>
             <Button onClick={this.props.pauseButton}>Pause</Button>
           </ButtonGroup>
-          <ButtonGroup bsSize="small">
+          <ButtonGroup bsSize="xsmall">
             <Button onClick={this.props.fast}>Fast</Button>
             <Button onClick={this.props.slow}>Slow</Button>
           </ButtonGroup>
-          <ButtonGroup bsSize="small">
+          <ButtonGroup bsSize="xsmall">
             <Button onClick={this.props.clear}>Clear</Button>
             <Button onClick={this.props.seed}>Sow it</Button>
           </ButtonGroup>
           <DropdownButton
-            bsSize="small"
+            bsSize="xsmall"
             title="Grid Size"
             id="size-menu"
             onSelect={this.handleSelect}

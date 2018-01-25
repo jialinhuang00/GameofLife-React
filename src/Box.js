@@ -11,7 +11,7 @@ export default class Box extends PureComponent {
   }
   render() {
     return (
-      <div
+      <td
         className={this.props.boxClass}
         id={this.props.id}
         role="presentation"
