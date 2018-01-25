@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-class Box extends Component {
+export default class Box extends PureComponent {
   static propTypes = {
     row: PropTypes.number.isRequired,
     col: PropTypes.number.isRequired,
@@ -14,6 +14,7 @@ class Box extends Component {
       <div
         className={this.props.boxClass}
         id={this.props.id}
+        role="presentation"
         onClick={
           () => this.props.selectBox(this.props.row, this.props.col)
         }
@@ -21,5 +22,4 @@ class Box extends Component {
     )
   }
 }
-export default Box
 

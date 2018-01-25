@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
 import Box from './Box'
 
-export default class Grid extends Component {
+export default class Grid extends PureComponent {
   static propTypes = {
     gridFull: PropTypes.array.isRequired,
     rows: PropTypes.number.isRequired,
