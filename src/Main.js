@@ -21,6 +21,7 @@ export default class Main extends Component {
     }
   }
   componentDidMount() {
+    console.log(process.env.PUBLIC_URL)
     this.seed()
     this.playButton()
   }
