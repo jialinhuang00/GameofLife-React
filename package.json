@@ -5,12 +5,12 @@
   "homepage": "https://jia0nnn-n.github.io/GameofLife-React",
   "dependencies": {
     "gh-pages": "^3.1.0",
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-bootstrap": "^0.32.0",
-    "react-dom": "^16.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "^3.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +24,7 @@
     "babel-eslint": "^8.2.1",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1"
   }
